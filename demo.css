@@ -1,0 +1,87 @@
+/*custom fonts - Bitter, Montserrat*/
+
+@import url('http://fonts.googleapis.com/css?family=Montserrat|Bitter');
+/*basic reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url('http://thecodeplayer.com/u/m/b1.png') no-repeat center center fixed;
+    background-size: cover;
+}
+h1 {
+    font: normal 32px/32px Bitter;
+    color: white;
+    text-align: center;
+    padding: 85px 100px;
+}
+/*nav styles*/
+
+ul {
+    background: white;
+    border-top: 6px solid hsl(180, 40%, 60%);
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+ul li {
+    list-style-type: none;
+    /*relative positioning for list items along with overflow hidden to contain the overflowing ripple*/
+    
+    position: relative;
+    overflow: hidden;
+}
+ul li a {
+    font: normal 14px/28px Montserrat;
+    color: hsl(180, 40%, 40%);
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    /*since the links are dummy without href values*/
+    /*prevent text selection*/
+    
+    user-select: none;
+    /*static positioned elements appear behind absolutely positioned siblings(.ink in this case) hence we will make the links relatively positioned to bring them above .ink*/
+    
+    position: relative;
+}
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+.btn {
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 20px;
+    min-width: 70px;
+    text-decoration: none;
+    font-family: Montserrat;
+    position: relative;
+    overflow: hidden;
+}
+.primary-btn {
+    color: white;
+    background-color: #3D8F8F
+}
+.secondary-btn {
+    color: #3D8F8F;
+}
+.round-btn {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 50%;
+    padding: 0;
+    font-family: Montserrat;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
